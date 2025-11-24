@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "953175183402",
+    "project_id": "airbnb-a2bee",
+    "storage_bucket": "airbnb-a2bee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953175183402:android:4dea175d5cef0f8fd17353",
+        "android_client_info": {
+          "package_name": "com.zero.flutter.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8kCZ3PraBVWX9iiWYPozDbloVUVyhyuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
