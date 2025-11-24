@@ -7,7 +7,19 @@ Future<void> savePlacesToFirebase() async {
   for (final Place place in listOfPlace){
     final String id = DateTime.now().toIso8601String() + Random().nextInt(100).toString();
     collectionRef.doc("das");
-    await collectionRef.doc(id).set(place.toMap());
+    try{
+      final doc = await collectionRef.doc(id).get();
+      if (doc.exists){
+        print("Document with id $id already exists. Skipping...");
+        continue;
+      }
+
+      await collectionRef.doc(id).set(place.toMap());
+      print("Document added successfully ${doc.id}");
+    }
+    catch(e){
+      print("Error checking document not added: $e");
+    }
   }
 }
 
